@@ -26,7 +26,6 @@ function EditUser(props) {
     }
     let user= [...props.data.user]
     user.splice(params.id,1,data)
-    
     props.data.setUser(user)
     navigate('/dashboard')
   }
